@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <fieldset style="width: 75%;">
+        <img src="./Images/APSRTC.jpg" alt="RTC LOGO" height="100" width="100">
+        <h2>ANDHRA PRADESH STATE ROAD TRANSPORT CORPORATION</h2>
+        <h2>GENERAL BUS PASS APPLICATION</h2>
+        </fieldset>
+    </center>  
+    <center>
+        <form action="./Submite.html" autocomplete="">
+
+        <fieldset style="width: 75%;">
+            <legend>Application Details</legend>
+            <table cellspacing="10" cellpadding="5" border="0" width="90%">
+                <tr>
+                    <td><label for="name">Name <span>*</span></label></td>
+                    <td><input type="text" name="name" id="Name" title="Your Name" required></td>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+                    <td><label for="Fname">Father's/Guardian's Name <span>*</span></label></td>
+                    <td><input type="text" name="Fname" id="Father Name" title="Father's/Guardian's Name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="DOB">Date of Birth <span>*</span></label></td>
+                    <td><input type="date" name="DOB" id="DOB" title="DOB" required></td>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+                    <td><label for="gender">Gender <span>*</span></label></td>
+                    <td>
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female">
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Age">Age As on</label></td>
+                    <td>
+                        <input type="number" name="Age" id="year(s)" title="Year(s)" style="width: 20px;">
+                        <label for="year(s)">Year(s)</label>
+                        <input type="number" name="Age" id="month(s)" title="month(s)" style="width: 20px;">
+                        <label for="month(s)">Month(s)</label>
+                        <input type="number" name="Age" id="day(s)" title="days(s)" style="width: 20px;">
+                        <label for="day(s)">Day(s)</label>
+                    </td>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+                    <td><label for="Aadhar">Aadhaar No <span>*</span></label></td>
+                    <td><input type="text" name="Aadhar" id="Aadhar" title="Aadhar" minlength="12" maxlength="12"  pattern="\d{12}" required></td>
+                </tr>
+                <tr>
+                    <td><label for="Wanum">WhatsApp No<span>*</span></label></td>
+                    <td><input type="text" name="Wanum" id="whathsapp number" title="Format is +91xxxxxxxxxx" required pattern="\+91[6-9][\d]{9}"></td>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+                    <td><label for="Email">Email <span>*</span></label></td>
+                    <td><input type="text" name="Email" id="Email" title="Your Email @gmail.com" required pattern="[a-zA-Z\d]+@gmail.com"></td>
+                </tr>
+                <tr>
+                    <td><label for="pic">Photo<span>*</span></label></td>
+                    <td><input type="file" name="pic" id="Photo" title="Upload Passport size photo" required></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset style="width: 75%;">
+            <legend>Residential Address Details</legend>
+            <table cellspacing="10" cellpadding="5" border="0" width="90%">
+            <tr>
+                <td><label for="Address">Applicant's Address<span>*</span></label></td>
+                <td><input type="text" id="Addrees" name="Address" title="Applicant Address"  required></td>
+                <td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+                <td><label for="District">District<span>*</span></label></td>
+                <td><select name="District" id="District" required>
+                    <option value="--select--">--select--</option>
+                    <option value="Prakasam">Prakasam</option>
+                    <option value="Bapatla">Bapatla</option>
+                    <option value="Guntur">Guntur</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="Mandal">Mandal<span>*</span></label></td>
+                <td><select name="Mandal" id="Mandal" required>
+                    <option value="--select--">--select--</option>
+                    <option value="Prakasam">Prakasam</option>
+                    <option value="Bapatla">Bapatla</option>
+                    <option value="Guntur">Guntur</option>
+                </select></td>
+                <td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+                <td><label for="Village">Village<span>*</span></label></td>
+                <td><select name="Village" id="Village" required>
+                    <option value="--select--">--select--</option>
+                    <option value="Chirala">Chirala</option>
+                    <option value="Bapatla">Bapatla</option>
+                    <option value="Guntur">Guntur</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="Pincode">Pincode<span>*</span></label></td>
+                <td><input type="number" name="Pincode" id="Pincode" title="Pincode" minlength="6" maxlength="6" required></td>
+            </tr>
+        </table>
+        </fieldset>
+        <label for="Captcha"> Your Captcha is "ABCD"</label>
+        <input type="text" name="Captcha" id="Captcha" title="Enter the Captcha" pattern="ABCD" required>
+        <br>
+        <br>
+        <input type="submit" value="Login">
+        </form>
+    </center>
+</body>
+</html>
